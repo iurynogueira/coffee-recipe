@@ -1,8 +1,42 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  height: 100vh;
+  background-image: url('assets/bg.png');
+}
+
+.main-container {
+  padding: 16px;
+}
+
+.option-circle {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0px 1px 9px 2px rgb(0 0 0 / 5%);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-container {
+  display: flex;
+  gap: 16px;
+}
+
+.form-container {
+  margin-top: 24px;
+}
+
+.gram-value {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.result-row {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
 }
 
 .logo {
