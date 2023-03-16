@@ -1,4 +1,5 @@
 import './App.css'
+import { IonButton } from '@brisanet/ion-react'
 
 function App() {
   return (
@@ -8,6 +9,10 @@ function App() {
         <p className="read-the-docs">
           Hello!
         </p>
+        <IonButton
+          label="Primary"
+          type="primary"
+        />
       </div>
     </div>
   )
