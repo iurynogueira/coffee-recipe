@@ -210,10 +210,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@brisanet/ion-react@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@brisanet/ion-react/-/ion-react-0.0.9.tgz#56ed6040389068a6b5389946b3d0214c10fe7508"
-  integrity sha512-vq4tThEIhyDamhg1WT0wpt9BIRLcTM40pFwFFSq2ogMcUUPzsGkIJscQFSx5/4eSsMmL31WLsnzDawwJrr1XSQ==
+"@brisanet/ion-react@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@brisanet/ion-react/-/ion-react-0.0.10.tgz#09b196e97bace2623f60ddf00ae0b62fd71f7d5e"
+  integrity sha512-gt4SgffH7aOQz6fiZ1VWtlSo+1s9YA8C/oroI2E0vvZOmf6rX5WYoVh55RKo+qUqKQKOTM+npWKqfzn6JJ1Zkw==
   dependencies:
     "@stitches/react" "^1.2.8"
     dompurify "^2.4.3"
