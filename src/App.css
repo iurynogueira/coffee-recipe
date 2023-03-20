@@ -64,6 +64,24 @@
   margin-top: 12px;
 }
 
+.footer-actions {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 60px;
+}
+
+@media (max-width: 400px) {
+  .footer-actions > button {
+    width: 100%;
+  }
+}
+
+.footer-feedback {
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
