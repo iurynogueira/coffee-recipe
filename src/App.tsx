@@ -1,16 +1,40 @@
 import './App.css'
-import { IonChip } from '@brisanet/ion-react'
+import { IonChip, IonButton, IonAlert } from '@brisanet/ion-react'
 import Beans from "./assets/coffee-beans.png"
 import { useState } from 'react'
 
 function App() {
   const [minMl, setMinMl] = useState(14)
   const [gramRequired, setGramRequired] = useState(20)
+  const [showFeedbackToSave, setShowFeedbackToSave] = useState(false)
 
   const minGramOptions = [10, 12, 14, 16]
 
   const handleChange = (value: string, setState: React.Dispatch<React.SetStateAction<any>>) => {
     setState(Number(value))
+  }
+
+  const showFeedback = (timer = 2000) => {
+    setShowFeedbackToSave(true)
+    setTimeout(() => {
+      setShowFeedbackToSave(false)
+    }, timer);
+  }
+
+  const saveRecipe = () => {
+    const storageKey = 'recipes'
+    const recipes = JSON.parse(localStorage.getItem(storageKey) || '[]')
+    const newRecipe = {
+      name: new Date(),
+      grams: gramRequired,
+      mls: minMl,
+      result: {
+        ml: gramRequired * minMl
+      }
+    }
+    recipes.push(newRecipe)
+    localStorage.setItem(storageKey, JSON.stringify(recipes))
+    showFeedback()
   }
 
   return (
@@ -56,6 +80,16 @@ function App() {
             </div>
 
           </div>
+        </div>
+
+        <div className='footer-actions'>
+          <IonButton label="Salvar receita" handleClick={saveRecipe} />
+        </div>
+
+        <div className='footer-feedback'>
+          {showFeedbackToSave && <span>Adicionado com sucesso!</span>}
+          {/* Substituir depois que estiver fixed na lib */}
+          {/* <IonAlert message="Example of alert message" /> */}
         </div>
       </div>
     </div>
