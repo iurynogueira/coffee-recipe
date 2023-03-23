@@ -1,5 +1,5 @@
 import './App.css'
-import { IonChip, IonButton, IonAlert } from '@brisanet/ion-react'
+import { IonChip, IonButton } from '@brisanet/ion-react'
 import Beans from "./assets/coffee-beans.png"
 import { useState } from 'react'
 

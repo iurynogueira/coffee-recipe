@@ -1,6 +1,12 @@
 #root {
   height: 100vh;
-  background-image: url('./assets/bg.PNG');
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
 }
 
 .page-container {

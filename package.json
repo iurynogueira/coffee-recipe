@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@brisanet/ion-react": "^0.0.10",
+    "@brisanet/ion-react": "^0.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
