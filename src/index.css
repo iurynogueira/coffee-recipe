@@ -27,7 +27,7 @@ body {
   margin: 0;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -37,5 +37,9 @@ body {
   }
   button {
     background-color: #f9f9f9;
+  }
+  input {
+    background-color: #f9f9f9;
+    color: #000;
   }
 }

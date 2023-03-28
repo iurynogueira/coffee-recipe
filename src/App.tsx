@@ -53,7 +53,7 @@ function App() {
             <div className='form-inner'>
               <span className='gram-value'>1g </span>
               <span>para </span>
-              <div style={{gap: '10px', display: 'flex'}}>
+              <div style={{gap: '10px', display: 'flex', paddingTop: '8px'}}>
                 {minGramOptions.map((value: number) => {
                   return (
                     <IonChip
@@ -72,7 +72,7 @@ function App() {
               <div>
                 <p className='read-the-docs'>Quantas gramas deseja fazer?</p>
               </div>
-              <input type="number" name="gram" value={gramRequired} onChange={(event) => handleChange(event.target.value, setGramRequired)} />
+              <input type="tel" name="gram" value={gramRequired} onChange={(event) => handleChange(event.target.value, setGramRequired)} />
               <div className='result-row'>
                 <span>Você pode fazer</span>
                 <span className='gram-value'>{gramRequired * minMl} mls</span>

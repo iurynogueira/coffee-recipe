@@ -14,7 +14,6 @@ input {
 }
 
 .main-container {
-  padding: 8px;
   display: flex;
   justify-content: center;
 }
@@ -49,7 +48,7 @@ input {
   gap: 28px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .form-container {
     flex-direction: column;
   }
@@ -77,9 +76,10 @@ input {
   margin-top: 60px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .footer-actions > button {
     width: 100%;
+    margin: 60px;
   }
 }
 
