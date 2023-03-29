@@ -1,5 +1,5 @@
 import './App.css'
-import { IonChip, IonButton } from '@brisanet/ion-react'
+import { IonChip } from '@brisanet/ion-react'
 import Beans from "./assets/coffee-beans.png"
 import { useState } from 'react'
 
@@ -39,14 +39,17 @@ function App() {
 
   return (
     <div className='page-container'>
-      <h1>Coffee Recipe</h1>
-      <div className='inner-page'>
+      <div>
+        <h1>Coffee Recipe</h1>
+      </div>
+
+      <div>
         <div className='row-container'>
           <div className='option-circle'>
             <img src={Beans} alt="" style={{height: '40px'}}/>
           </div>
 
-          <p className='read-the-docs'>Informe abaixo as proporções</p>
+          <p className='subtitle'>Informe abaixo as proporções</p>
         </div>
         <div className='main-container'>
           <div className='form-container'>
@@ -70,7 +73,7 @@ function App() {
 
             <div className='form-inner'>
               <div>
-                <p className='read-the-docs'>Quantas gramas deseja fazer?</p>
+                <p className='subtitle'>Quantas gramas deseja fazer?</p>
               </div>
               <input type="tel" name="gram" value={gramRequired} onChange={(event) => handleChange(event.target.value, setGramRequired)} />
               <div className='result-row'>
@@ -78,19 +81,12 @@ function App() {
                 <span className='gram-value'>{gramRequired * minMl} mls</span>
               </div>
             </div>
-
           </div>
         </div>
+      </div>
 
-        <div className='footer-actions'>
-          <IonButton label="Salvar receita" handleClick={saveRecipe} />
-        </div>
-
-        <div className='footer-feedback'>
-          {showFeedbackToSave && <span>Adicionado com sucesso!</span>}
-          {/* Substituir depois que estiver fixed na lib */}
-          {/* <IonAlert message="Example of alert message" /> */}
-        </div>
+      <div className='footer-actions'>
+        <span className='subtitle'>Iury Nogueira</span>
       </div>
     </div>
   )

@@ -11,6 +11,11 @@ input {
 
 .page-container {
   padding: 16px;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-container {
@@ -73,7 +78,7 @@ input {
   display: flex;
   justify-content: center;
 
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 @media (max-width: 480px) {
@@ -120,6 +125,6 @@ input {
   padding: 2em;
 }
 
-.read-the-docs {
+.subtitle {
   color: #888;
 }
