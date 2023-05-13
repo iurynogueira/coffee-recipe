@@ -81,6 +81,22 @@ input {
   /* margin-top: 60px; */
 }
 
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  text-align: center;
+  height: 30px;
+}
+
+.open-source {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
 @media (max-width: 480px) {
   .footer-actions > button {
     width: 100%;
