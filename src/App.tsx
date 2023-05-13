@@ -1,7 +1,8 @@
 import './App.css'
-import { IonChip } from '@brisanet/ion-react'
+import { IonChip, IonButton } from '@brisanet/ion-react'
 import Beans from "./assets/coffee-beans.png"
 import { useState } from 'react'
+import Recipe from './components/Recipe/Recipe'
 
 function App() {
   const [minMl, setMinMl] = useState(14)
@@ -85,9 +86,30 @@ function App() {
         </div>
       </div>
 
-      <div className='footer-actions'>
-        <span className='subtitle'>Iury Nogueira</span>
+      {/* <div className='footer-actions'>
+        <IonButton label="Salvar receita" handleClick={saveRecipe} />
+      </div> */}
+
+      <div className='footer-feedback'>
+        {showFeedbackToSave && <span>Adicionado com sucesso!</span>}
+        {/* Substituir depois que estiver fixed na lib */}
+        {/* <IonAlert message="Example of alert message" /> */}
       </div>
+
+      {/* <div>
+        <Recipe />
+      </div> */}
+
+      <div className='footer'>
+        <p className='subtitle'>Iury Nogueira</p>
+        <div className='open-source'>
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github icon" />
+          <p className='subtitle'>Este é um projeto 
+            <a href="https://github.com/iurynogueira/coffee-recipe" target='_blank'> open source </a>
+          </p>
+        </div>
+      </div>
+
     </div>
   )
 }
